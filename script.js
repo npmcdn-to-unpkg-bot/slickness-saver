@@ -226,7 +226,6 @@ function displayLine(){
                         }
                     }
                     content+="<br><b>Last Update: </b>"+timing(data.dt);
-                    content+="<br>"+index;
                     colors.push(decideColor(data));
                     contents.push(content);
                     //We get the data for the midpoint of each of the 20 segments.
