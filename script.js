@@ -305,7 +305,7 @@ function clearLine(){
 function query(latlng){
     $.getJSON({
         dataType: "json",
-        url: "http://api.openweathermap.org/data/2.5/weather?lat="+latlng.lat+"&lon="+latlng.lng+"&cnt=1&appid=a1e5558153c6b14860cbfb09203d197e",
+        url: "https://api.openweathermap.org/data/2.5/weather?lat="+latlng.lat+"&lon="+latlng.lng+"&cnt=1&appid=a1e5558153c6b14860cbfb09203d197e",
         //url: "http://magic.csr.utexas.edu/public/views/gauges",
         success: function(data){
             map(data);
