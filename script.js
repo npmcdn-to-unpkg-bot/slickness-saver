@@ -1,3 +1,4 @@
+var apiKey = "a1e5558153c6b14860cbfb09203d197e";
 var mymap = L.map("map").setView([27.6648,-81.5158], 7);
 //open a map and set the view to Florida
 var myLayer;
@@ -202,7 +203,7 @@ function displayLine(){
             segPointer+=1;
             $.getJSON({
                 dataType: "json",
-                url: "http://api.openweathermap.org/data/2.5/weather?lat="+targetLoc.lat+"&lon="+targetLoc.lng+"&cnt=10&appid=a1e5558153c6b14860cbfb09203d197e",
+                url: "http://api.openweathermap.org/data/2.5/weather?lat="+targetLoc.lat+"&lon="+targetLoc.lng+"&cnt=10&appid="+apiKey+"",
                 success: function(data){
 
                     var content = "<b>Name: </b>"+data.name+"<br><b> Weather Description: </b>"+data.weather[0].description+"<br><b>Rain Level: </b>";
