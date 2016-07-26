@@ -1,0 +1,155 @@
+
+#tog1{
+    position: absolute;
+    left:calc(5.5% + 30px);
+    top: 28.25%;
+}
+#tog3{
+    position: absolute;
+    left:calc(5.5% + 185px);
+    top: 28.25%;
+}
+#tog2{
+    position: absolute;
+    left:calc(5.5% + 105px);
+    top: 48%;
+}
+#tog4{
+    position: absolute;
+    left:calc(5.5% + 105px);
+    top: 28.25%;
+}
+#tog6{
+    position: absolute;
+    left: calc(5.5% + 108px);
+    top: 68%;
+}
+
+#cancel{
+    position: absolute;
+    left: calc(5.5% + 85px);
+    top: 86%;
+    background-color: #FF4040;
+}
+#done{
+    position: absolute;
+    left: calc(5.5% + 75px);
+    bottom: 2%;
+    background-color: #659D32;
+}
+#title{
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    position: absolute;
+    left:calc(5.5% + 10px);
+    color: #FFFFFF;
+    top: 6.5%;
+}
+#name{
+    position: absolute;
+    right:0%;
+    top: 0%;
+    font-size: 8px;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    background-color:#000000;
+    opacity: 0.5;
+    z-index: 1001;
+    text-align: center;
+    max-width: 550px;
+    color: #FFFFFF;
+}
+#sidebar{
+    position: absolute;
+    background-attachment: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+    left: 5.5%;
+    opacity: 0.5;
+    top: 0px;
+}
+
+.mybutton{
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 16px;
+    background-color:#0099CC;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    z-index: 1000;
+    border: none;
+    outline: none;
+}
+#legend{
+    position: absolute;
+    right: 0%;
+    width: 20%;
+    text-align: center;
+    bottom: 0%;
+    padding:0px;
+}
+
+.transparent{
+    position: absolute;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    z-index: 1005;
+    font-size: 16px;
+    color: #ffffff
+}
+#label1{
+    left: calc(5.5% + 80px);
+    top: 21%;
+}
+#label2{
+    left: calc(5.5% + 75px);
+    top: 80%;
+}
+#label3{
+    left: 13%;
+    top: 40%;
+}
+#label4{
+     left: calc(5.5% + 115px);
+     top: 60%;
+}
+#label5{
+    position: absolute;
+    left:calc(5.5% + 90px);
+    top: 40%;
+}
+#label6{
+    position: absolute;
+    left:calc(5.5% + 240px);
+    top: 2%;
+}
+#message{
+    position: absolute;
+    left: calc(5.5% + 320px);
+    top: 5%;
+    font-size: 24px;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    background-color:#000000;
+    opacity: 0.8;
+    z-index: 1001;
+    text-align: center;
+    width: calc(100% - 5.5% - 360px);
+    color: #FFFFFF;
+}
+#close{
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.mybutton:hover{
+    background-color: #0D4F8B;
+}
+#map { position: absolute; top:0; bottom:0; right:0; left:0; height:100%; z-index:50;}

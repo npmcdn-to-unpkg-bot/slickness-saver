@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+    <script src="ESRI/dist/esri-leaflet.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<br>
+<span id="sidebar"></span>
+<button class="mybutton" id="tog1">Points</button><br>
+<button class="mybutton" id="tog3">Routes</button><br>
+<button class="mybutton" id="tog4">Legend</button><br>
+<button class="mybutton" id="tog2">Routes</button><br>
+<button class="mybutton" id="tog6">Medium</button><br>
+<div id="legend" class="mybutton">
+    <div style="background-color:gray;"> Legend (Rainfall in the Past 3 Hours) </div>
+    <div style="background-color:white;"> 0mm </div>
+    <div style="background-color:#3299CC;"> 0  - 2.5mm </div>
+    <div style="background-color:#499DF5;"> 2.5 - 5mm </div>
+    <div style="background-color:#37FDFC;"> 5 - 10mm </div>
+    <div style="background-color:yellow;"> 10 - 15mm </div>
+    <div style="background-color:orange;"> 15 - 20mm </div>
+    <div style="background-color:#ff6666;"> 20 - 25mm </div>
+    <div style="background-color:#ff0000;"> 25mm+ </div>
+</div><br>
+<button class="mybutton" id="cancel">Cancel Route</button><br>
+<button class="mybutton" id="done">Complete Route</button><br>
+<span id="label1" class="transparent">Toggle Visiblity <span id="hid2">🛈</span></span><br>
+<span id="label2" class="transparent">Route Controls <span id="hid5">🛈</span></span><br>
+<span id="label4" class="transparent">Size <span id="hid4">🛈</span></span><br>
+<div id="message">Welcome to Slickness Saver! This tool was built to assist users in analyzing the slickness of roads and weather conditions
+along a given route. Applications range from helping roadside assistance personnel better respond in harsh weather conditions, to designing a safer
+passage for common drivers. To start, "draw" your route by clicking on the points through which you wish to travel (in order). More in-depth details about
+ a specific location can be obtained by clicking on a point along an existing route. Additional information about operating Slickness Saver can be obtained
+by hovering over the "🛈" symbols. <br><br><span id="close"><b>Sounds Great!</b></span><br>&nbsp</div><br>
+<span id="label6" class="transparent">Help</span>
+<span id="label5" class="transparent">Edit Mode <span id="hid3">🛈</span></span><br>
+<span id="title">Slickness Saver <span id="hid1">🛈</span></span><br>
+<span id="name">By Spencer Compton</span><br>
+<br>
+<script src = "script.js"></script>
+</body>
+</html>
