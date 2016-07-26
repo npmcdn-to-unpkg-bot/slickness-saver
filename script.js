@@ -16,6 +16,7 @@ var index=0;
 var linesLayer = L.layerGroup([]);
 var thisLine = L.layerGroup([]);
 var legendOn = true;
+var starting = true;
 //instatiate global variables
 L.esri.basemapLayer("Streets").addTo(mymap);
 //use the ESRI Streets basemap
@@ -407,50 +408,88 @@ $( "#tog2" ).on( "click",function(){
 });
 //Toggles edit mode
 $("#label6").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text('Welcome to Slickness Saver! This tool was built to assist users in analyzing the slickness of roads and weather conditions'+
         'along a given route. Applications range from helping roadside assistance personnel better respond in harsh weather conditions, to designing a safer'+
         'passage for common drivers. To start, "draw" your route by clicking on the points through which you wish to travel (in order). More in-depth details about'+
         'a specific location can be obtained by clicking on a point along an existing route. Additional information about operating Slickness Saver can be obtained'+
         'by hovering over the "🛈" symbols.');
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 $("#hid1").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text("Slickness Saver is a tool which allows users to receive rainfall data with an easy-to-use interface and " +
         "quick response time. Slickness Saver is targetted towards roadside assistance personnel (for intuitive positioning) and other users concerned " +
         "about harsh driving conditions in an effort to combat the primary cause of weather-related automobile accidents.")
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 //Shows the mission of Slickness Saver
 $("#hid2").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text("Clicking any of the three buttons below toggles the named element's visibility.")
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 //Gives instructions on visibility section
 $("#hid3").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text("Slickness Saver allows for users to query rainfall data in two ways. \"Routes\" Edit Mode requires users to draw their " +
         "route through a series of clicks. To cancel or complete a route, utilize Road Controls. When a route is completed, rainfall is displayed along "+
         "route. \"Points\" Edit Mode simply requires users to click the location about which that would like rainfall data.")
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 //Explains edit modes
 $("#hid4").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text("Clicking the button below cycles \"Routes\" and \"Points\" through three preset sizes.")
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 //Explains size changes
 $("#hid5").hover(function(){
+    if(starting){
+        return;
+    }
     $("#message").text("Clicking \"Cancel Route\" eliminates the route you are currently creating and any progress cannot be regained. Clicking \"Complete " +
         "Route\" finishes the route and then displays rainfall data along the path.")
 }, function(){
+    if(starting){
+        return;
+    }
     $("#message").text("")
 });
 //Expains Route Controls
 $( "#close" ).on( "click",function(){
+    starting = false;
     $("#message").text("")
 });
+
 //Allows user to close the welcome message
